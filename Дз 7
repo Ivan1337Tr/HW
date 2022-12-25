@@ -1,0 +1,70 @@
+import random 
+my_file = open("BabyFile.txt", "r+")
+n = int(input('n'))
+for n in range (0,n+1):
+    s = str(random.randrange(1000,10000))
+    my_file.write(s)
+    my_file.write(' ')
+    
+    
+import math
+my_file = open("BabyFile.txt", "r+")
+a = int(input('a'))
+b = int(input('b'))
+h = int(input('h'))
+x = 0
+my_file.write('a:  ')
+my_file.write('b:  ')
+my_file.write('h:  ')
+my_file.write('x:    ')
+my_file.write('y: ')
+for x in range (a,b,h):
+    y = str((x* math.log(1+(math.sin(x)/x))) / x + math.sin(x))
+    my_file.write('\n')
+    my_file.write(str(a))
+    my_file.write('   ')
+    my_file.write(str(b))
+    my_file.write('   ')
+    my_file.write(str(h))
+    my_file.write('   ')
+    my_file.write(str(x))
+    my_file.write('   ')
+    my_file.write(y)
+    
+    
+import random 
+my_file = open("vvs.txt", "r")
+a = my_file.readline()
+line1 = random.choice(open('vvs.txt').readlines())
+line2 = random.choice(open('vvs.txt').readlines())
+if not(line1 == line2):
+    print('I recieve ',line1)
+    print('You receive ',line2)
+else :
+    line1 = random.choice(open('vvs.txt').readlines())
+    line2 = random.choice(open('vvs.txt').readlines())
+    print('I recieve ',line1)
+    print('You receive ',line2)
+    
+    
+a:  b:  h:  x:    y: 
+1   7   1   1   1.4520356853053993
+1   7   1   2   1.2840618642187163
+1   7   1   3   0.18708714617792452
+1   7   1   4   -0.9665371291093862
+1   7   1   5   -1.171851261919647
+1   7   1   6   -0.32710398162631177
+
+
+hat
+cat
+walrus
+soda
+gingerbread
+gas
+snoring
+constant
+crooked
+thorn
+neck
+I
